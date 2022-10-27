@@ -1,9 +1,7 @@
 <h1 align="center">
 <img width="40" valign="bottom" src="https://ultimatecourses.com/static/icons/typescript.svg">
-TypeScript: Basics Course Training
+TypeScript: Basics Training
 </h1>
-<h4 align="center">Project seed for introduction to TypeScript course.</h4>
-
 # Conclusion about Typescript
 
 - Prefer enum rather than Union for values, especially for many pizza types for example (to DRY)
