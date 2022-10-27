@@ -2,7 +2,8 @@
 <img width="40" valign="bottom" src="https://ultimatecourses.com/static/icons/typescript.svg">
 TypeScript: Basics Training
 </h1>
-# Conclusion about Typescript
+
+# Conclusion
 
 - Prefer enum rather than Union for values, especially for many pizza types for example (to DRY)
 - Prefer interface than type, because it's extendable
