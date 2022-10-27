@@ -1,16 +1,27 @@
 <h1 align="center">
 <img width="40" valign="bottom" src="https://ultimatecourses.com/static/icons/typescript.svg">
-TypeScript: Basics Course Seed
+TypeScript: Basics Course Training
 </h1>
-<h4 align="center">Project seed for our comprehensive introduction to TypeScript course.</h4>
+<h4 align="center">Project seed for introduction to TypeScript course.</h4>
+
+# Conclusion about Typescript
+
+- Prefer enum rather than Union for values, especially for many pizza types for example (to DRY)
+- Prefer interface than type, because it's extendable
+- Prefer interface than tuple, because it's more understandable
+- Don't re-type a well typed function with the general 'Function' type,
+    because we lose some types safety checks, create a new type instead (reusable)!
+- Never use the type any, if there is many possibilities try to enumerate them with the Union operator |
+- Be careful with optional parameters, and undefined values, that might be set to '0' and still return false
+- See the section for 'interface with index signature', super interesting to make evolutive / super dynamic data structures
+- Classes in typescript are pretty cool and not boring at all anymore!
+- Visibility in class constructor can generate the attribute, cool for DRY
+- REALLY Never use String or Number, always string or number in lowercase (I know, not like in Java)
+- Instead of enums, see the alternative with const, it's tricky but remains more understandable once transformed to JS, with the same benefits (when/if enums are added to JavaScript then you can move to the new enum syntax)
 
 ---
 
-<a href="https://ultimatecourses.com" target="_blank"><img src="https://ultimatecourses.com/static/banners/ultimate-typescript-leader.svg"></a>
-
----
-
-> This repo serves as the seed project for Ultimate Angular's TypeScript Basics course as well as the final solution in stepped branches, come and [learn TypeScript](https://ultimatecourses.com/courses/typescript) with us!
+> This repo serves is a fork of the project for Ultimate Angular's TypeScript Basics course as well as the final solution in stepped branches, come and [learn TypeScript](https://ultimatecourses.com/courses/typescript) with us!
 
 [Setup and install](#setup-and-install) | [Tasks](#tasks) |
 [Resources](#resources)
@@ -79,18 +90,3 @@ further about to dive deeper or understand in more detail what they are:
 * [TypeScript Docs](https://www.typescriptlang.org)
 * [TypeScript Playground](https://www.typescriptlang.org/play)
 * [AST Explorer](https://astexplorer.net)
-
-# Conclusion about Typescript
-
-- Prefer enum rather than Union for values, especially for many pizza types for example (to DRY)
-- Prefer interface than type, because it's extendable
-- Prefer interface than tuple, because it's more understandable
-- Don't re-type a well typed function with the general 'Function' type,
-    because we lose some types safety checks, create a new type instead (reusable)!
-- Never use the type any, if there is many possibilities try to enumerate them with the Union operator |
-- Be careful with optional parameters, and undefined values, that might be set to '0' and still return false
-- See the section for 'interface with index signature', super interesting to make evolutive / super dynamic data structures
-- Classes in typescript are pretty cool and not boring at all anymore!
-- Visibility in class constructor can generate the attribute, cool for DRY
-- REALLY Never use String or Number, always string or number in lowercase (I know, not like in Java)
-- Instead of enums, see the alternative with const, it's tricky but remains more understandable once transformed to JS, with the same benefits (when/if enums are added to JavaScript then you can move to the new enum syntax)
